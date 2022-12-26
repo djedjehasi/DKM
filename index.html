@@ -9,24 +9,23 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="continer w-screen fixed top-10 z-10">
-        <header class="w-5/6 h-20 mx-auto flex items-center rounded-[50px] bg-slate-300 shadow-md">
+    <div class="continer w-screen fixed top-10 z-20">
+        <header class="w-5/6 h-20 mx-auto flex items-center rounded-[50px] bg-white shadow-2xl">
             <button id ="hamburger" class="felx flex-col items-center humburger h-10 w-10 ml-auto mr-10 xl:hidden z-10">
                 <div id="line_t" class="w-6 h-0.5 mt-2 bg-slate-500 rounded-full transition-all duration-500 ease-in-out"></div>
                 <div id="line_m" class="w-6 h-0.5 mt-2 bg-slate-500 rounded-full transition-all duration-300 ease-in-out"></div>
                 <div id="line_b" class="w-6 h-0.5 my-2 bg-slate-500 rounded-full transition-all duration-500 ease-in-out"></div> 
             </button>
             <div class="ml-10 xl:mr-10 z-10">LOGO</div>
-            <nav class="w-5/6 fixed flex flex-col bg-slate-300 text-center pb-4 pt-10 top-20 rounded-b-[40px] opacity-0 transition-all ease-in-out duration-500 z-0">
-                <div class="h-[0.5px] w-4/6 bg-slate-500 mx-auto"></div>
+            <nav class="w-5/6 fixed flex flex-col bg-white text-center pb-1 pt-10 top-20 rounded-b-[40px] shadow-lg opacity-0  transition-all ease-in-out duration-500 z-0">
+                <div class="h-[0.5px] w-full bg-slate-300 mx-auto"></div>
                 <a class="my-2 text-xl" href="#">בית</a>
-                <div class="h-[0.5px] w-3/6 bg-slate-500 mx-auto"></div>
+                <div class="h-[0.5px] w-full bg-slate-300 mx-auto"></div>
                 <a class="my-2 text-xl" href="#">אודות</a>
-                <div class="h-[0.5px] w-3/6 bg-slate-500 mx-auto"></div>
+                <div class="h-[0.5px] w-full bg-slate-300 mx-auto"></div>
                 <a class="my-2 text-xl" href="#">שירות</a>
-                <div class="h-[0.5px] w-3/6 bg-slate-500 mx-auto"></div>
+                <div class="h-[0.5px] w-full bg-slate-300 mx-auto"></div>
                 <a class="my-2 text-xl" href="#">צור קשר</a>
-                <div class="h-[0.5px] w-3/6 bg-slate-500 mx-auto"></div>
             </nav>
         </header>
     </div>
@@ -41,27 +40,30 @@
     </section>
     
 
-    <section id="feuters" class="block mx-5 z-10">
-            <div id="card" class="h-64 w-auto sm:w-80 mx-auto my-10 flex flex-col shadow-[0_0_35px_-25px] rounded-lg z-10">
-                <div class="h-20 w-20 rounded-full mt-5 mx-auto bg-cyan-300"></div>
+    <section id="feuters" class="flex flex-col gap-10 z-10">
+        <div class="flex flex-col gap-10 mx-5">
+            <div id="card" class="h-64 w-full sm:w-80 mx-auto py-10 flex flex-col shadow-[0_0_35px_-25px] rounded-lg z-10">
+                <div class="h-20 w-20 rounded-full mx-auto bg-cyan-300"></div>
                   <div class="text-center mt-8">
                     <h3 class="font-semibold text-xl">תעודה מקצועית</h3>
                     <p class="text-right mt-4 mx-4">מסאזיט מוסמך ע״י סטידיו באסט מאז משנת 2012</p>
                 </div>
             </div>
-            <div id="card" class="h-64 w-auto mx-auto my-10 flex flex-col shadow-[0_0_35px_-25px] rounded-lg z-10">
-                <div class="h-20 w-20 rounded-full mt-5 mx-auto bg-violet-400"></div>
+            <div id="card" class="h-64 w-full mx-auto py-10 flex flex-col shadow-[0_0_35px_-25px] rounded-lg z-10">
+                <div class="h-20 w-20 rounded-full  mx-auto bg-violet-400"></div>
                 <div class="text-center mt-8">
                     <h3 class="font-semibold text-xl">תעודה מקצועית</h3>
                     <p class="text-right mt-4 mx-4">מסאזיט מוסמך ע״י סטידיו באסט מאז משנת 2012</p>
                 </div>
             </div>
-            <div id="card" class="h-64 w-auto mx-auto my-10 flex flex-col shadow-[0_0_35px_-25px] rounded-lg z-10">
-                <div class="h-20 w-20 rounded-full mt-5 mx-auto bg-violet-400"></div>
+            <div id="card" class="h-64 w-full mx-auto py-10 flex flex-col shadow-[0_0_35px_-25px] rounded-lg z-10">
+                <div class="h-20 w-20 rounded-full mx-auto bg-violet-400"></div>
                 <div class="text-center mt-8">
                     <h3 class="font-semibold text-xl">תעודה מקצועית</h3>
                     <p class="text-right mt-4 mx-4">מסאזיט מוסמך ע״י סטידיו באסט מאז משנת 2012</p>
                 </div>
+            </div>
+        </div>
             </div>
     </section>
 
@@ -74,28 +76,83 @@
     </section>
 
     <section id="service" class="bg-service-patten w-screen py-20 bg-top bg-fit">
-        <div class="continer flex flex-col items-center">
-            <h2 class="text-center text-2xl font-semibold">תהליך הטיפול</h2>
+        <div class="continer flex flex-col items-center ">
+            <h2 class="text-center text-2xl font-semibold">התאמת טיפול</h2>
+            <p></p>
         <div class="cards-grid inline-grid grid-rows-3 grid-cols-2 gap-10 mx-5 text-center mt-10">
             <div id="card" class="h-36 w-36 bg-white rounded-xl ">
-                <h1>שלב 1</h1>
+                <h1>רקע אישי</h1>
             </div>
             <div id="card" class="h-36 w-36 bg-white rounded-xl">
-                <h1>שלב 2</h1>
+                <h1>היסטוריה רפואית</h1>
             </div>
             <div id="card" class="h-36 w-36 bg-white rounded-xl">
-                <h1>שלב 3</h1>
+                <h1>איבחון פיזי</h1>
             </div>
             <div id="card" class="h-36 w-36 bg-white rounded-xl">
-                <h1>שלב 4</h1>
+                <h1>התאמת טיפול</h1>
             </div>
             <div id="card" class="h-36 w-36 bg-white rounded-xl">
-                <h1>שלב 5</h1>
+                <h1>שעה ל שעה 45</h1>
             </div>
         </div>
         </div>
-        
-    
+    </section>
+
+    <section id="reviews" class="flex flex-col my-20 mx-5">
+        <h2 class="text-center text-2xl font-semibold">לקוחות מספרים</h2>
+        <p>לקוחות מרוצים מספרים על החוויה שלהם</p>
+
+        <div class="flex flex-col gap-10">
+            <div id="card" class="h-64 w-full mx-auto flex flex-col shadow-[0_0_35px_-25px] rounded-lg z-10">
+                <div class="text-center">
+                    <h3 class="font-semibold text-xl">תעודה מקצועית</h3>
+                    <p class="text-right mx-4">מסאזיט מוסמך ע״י סטידיו באסט מאז משנת 2012</p>
+                </div>
+            </div>
+            <div id="card" class="h-64 w-full mx-auto flex flex-col shadow-[0_0_35px_-25px] rounded-lg z-10">
+                <div class="text-center">
+                    <h3 class="font-semibold text-xl">תעודה מקצועית</h3>
+                    <p class="text-right mx-4">מסאזיט מוסמך ע״י סטידיו באסט מאז משנת 2012</p>
+                </div>
+            </div>
+            <div id="card" class="h-64 w-full mx-auto flex flex-col shadow-[0_0_35px_-25px] rounded-lg z-10">
+                <div class="text-center">
+                    <h3 class="font-semibold text-xl">תעודה מקצועית</h3>
+                    <p class="text-right mx-4">מסאזיט מוסמך ע״י סטידיו באסט מאז משנת 2012</p>
+                </div>
+            </div>    
+        </div>
+     
+    </section>
+
+    <section id="pricing" class="flex flex-col my-20 mx-5">
+        <h2 class="text-center text-2xl font-semibold">
+            מחירון
+        </h2>
+        <p>
+            חבילות עיסוי מומלצות:
+        </p>
+        <div class="flex flex-col gap-16">
+            <div id="card" class="h-96 w-full mx-auto flex flex-col shadow-[0_0_35px_-25px] rounded-lg z-10">
+                <div class="text-center">
+                    <h3 class="font-semibold text-xl">עיסוי בודד</h3>
+                    <p class="text-right mx-4">עיסוי בודד לטיפול נקודתי</p>
+                </div>
+            </div>
+            <div id="card" class="h-96 w-full mx-auto flex flex-col shadow-[0_0_35px_-25px] rounded-lg z-10">
+                <div class="text-center">
+                    <h3 class="font-semibold text-xl">חבילת עיסוי </h3>
+                    <p class="text-right mx-4">חבילת עיסויים - כרטסיה ל10 עיסויים</p>
+                </div>
+            </div>
+            <div id="card" class="h-96 w-full mx-auto flex flex-col shadow-[0_0_35px_-25px] rounded-lg z-10">
+                <div class="text-center">
+                    <h3 class="font-semibold text-xl">חבר מועדון</h3>
+                    <p class="text-right mx-4">חבילת פרמיום לעיסוים שובעיים</p>
+                </div>
+            </div>    
+        </div>
     </section>
 </body>
 </html>
