@@ -629,6 +629,18 @@ video {
   bottom: -0.25rem;
 }
 
+.-bottom-20 {
+  bottom: -5rem;
+}
+
+.-bottom-96 {
+  bottom: -24rem;
+}
+
+.-bottom-3 {
+  bottom: -0.75rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -726,10 +738,6 @@ video {
 
 .ml-10 {
   margin-left: 2.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .mt-8 {
@@ -2003,6 +2011,16 @@ video {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-1 {
