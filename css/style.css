@@ -625,28 +625,16 @@ video {
   top: 5rem;
 }
 
-.top-\[500px\] {
-  top: 500px;
+.top-\[530px\] {
+  top: 530px;
 }
 
 .-bottom-1 {
   bottom: -0.25rem;
 }
 
-.top-\[510px\] {
-  top: 510px;
-}
-
-.top-\[512px\] {
-  top: 512px;
-}
-
-.top-\[520px\] {
-  top: 520px;
-}
-
-.top-\[530px\] {
-  top: 530px;
+.-bottom-10 {
+  bottom: -2.5rem;
 }
 
 .isolate {
