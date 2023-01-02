@@ -10,14 +10,11 @@ const buttomLine = document.querySelector('#line_b');
 // what to do?
 
 hamburger.addEventListener('click', ()=> {
-    header.classList.toggle('shadow-md')
-    nav.classList.toggle('opacity-100');
-    nav.classList.toggle('h-auto');
+    nav.classList.toggle('shadow-lg');
+    nav.classList.toggle('max-h-[280px]');
     topLine.classList.toggle('rotate-45');
     topLine.classList.toggle('translate-y-2.5');
     middleLine.classList.toggle('opacity-0');
-    //nav.classList.toggle('overflow-hidden');
-   //nav.classList.toggle('translate-y-[5.6rem]');
     middleLine.classList.toggle('-translate-x-1');
     buttomLine.classList.toggle('-rotate-45');
     buttomLine.classList.toggle('-translate-y-2.5');
