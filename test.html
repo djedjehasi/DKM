@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="test.js" defer></script>
+</head>
+<body>
+    <div class="h-screen w-screen flex justify-center items-center">
+        <div class="h-3/5 w-4/5 bg-sky-300">
+            <!-- Arrows start -->
+            <div class="relative flex items-center justify-between h-10 w-full top-[50%]">
+                <div id="left-arrow" class=" flex flex-col gap-[10px] cursor-pointer ml-5">
+                    <div class="relative h-1 w-6 bg-red-400 -rotate-45 "></div>
+                    <div class="relative h-1 w-6 bg-red-400 rotate-45 "></div>
+                </div>
+                <div id="right-arrow" class=" flex flex-col gap-[10px] cursor-pointer mr-5">
+                    <div class="relative h-1 w-6 bg-red-400 rotate-45 "></div>
+                    <div class="relative h-1 w-6 bg-red-400 -rotate-45 "></div>
+                </div>
+            </div>
+            <!-- Arrows End -->
+
+            <!-- Slides Starts Here! -->
+            <div class="h-full min-w-full flex flex-row gao-3 -mt-10 overflow-hidden">
+                <div id="slide1" class="h-4/5 w-[100%] bg-violet-600 my-auto transition-all duration-700"></div>
+                <div id="slide2" class="h-4/5 w-0 bg-yellow-400 my-auto transition-all duration-700 -mr"></div>
+                <div id="slide3" class="h-4/5 w-0 bg-green-400 my-auto transition-all duration-700 -mr"></div>
+                <div id="slide4" class="h-4/5 w-0 bg-gray-400 my-auto transition-all duration-700 -mr"></div>
+                <div id="slide5" class="h-4/5 w-0 bg-pink-200 my-auto transition-all duration-700 -mr"></div>
+            </div>
+            <!-- Slides Ends Here!-->
+        </div>
+    </div>
+</body>
+</html>
