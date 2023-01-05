@@ -10,42 +10,44 @@ const slide3 = document.querySelector('#slide3');
 const slide4 = document.querySelector('#slide4');
 const slide5 = document.querySelector('#slide5');
 //array
-const slide = [slide1, slide2, slide3, slide4, slide5];
-let c = 0;
-let n = 1;
+const slides = [slide1, slide2, slide3, slide4, slide5];
+let currntSlide = 0;
+let nextSlide = 0;
 
+function checkSlide(){
+    for (i = 0; i < slides.length; i++ ){
+        let y = slides[i].classList.contains('w-[100%]');
+        if (slides[i].classList.contains('w-[100%]')){
+            return slides[i]
 
-function slideRight() {
-    if (n < 5){
-    slide[c].classList.toggle('w-0');
-    slide[c].classList.toggle('w-[100%]');
-    slide[n].classList.toggle('w-[100%]');
-    slide[n].classList.toggle('w-0');
-
-    c ++;
-    n++;
-    } else {
-        c = 0;
-        n = 1;
-        slide[4].classList.toggle('w-[100%]');
-        slide[4].classList.toggle('w-0')
-        slide[0].classList.toggle('w-[100%]');
-        slide[0].classList.toggle('w-0')
+        }
     }
 }
 
+function slideRight() {
+    let  x = checkSlide();
+    console.log (x);
+    if(x[0] < slides.length){
+        currntSlide = x[0];
+        nextSlide = x[1];
 
-function slideLeft (){
+        x[0].toggle('w-0');
+        x[0].toggle('w-[100%]');
+        x[1].toggle('w-[100%]');
+        x[1].toggle('w-0');
+        
 
-    slide[c].classList.toggle('w-0');
-    slide[c].classList.toggle('w-[100%]');
-    slide[n].classList.toggle('w-[100%]');
-    slide[n].classList.toggle('w-0');
+    } else {
+        currntSlide = slides[0];
+        nextSlide = slides[1];
+        currntSlide.classList.toggle('w-0');
+        currntSlide.classList.toggle('w-[100%]');
+        nextSlide.classList.toggle('w-[100%]');
+        nextSlide.classList.toggle('w-0');
+    }
 
     
-    
-};
-
+}
 
 
 rightArrow.addEventListener('click', ()=> {
@@ -55,4 +57,3 @@ rightArrow.addEventListener('click', ()=> {
 leftArrow.addEventListener('click' , ()=>{
     slideLeft ();
 });
-
